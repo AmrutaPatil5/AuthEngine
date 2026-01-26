@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Base Styles */
+@layer base {
+  body {
+    @apply bg-white dark:bg-dark-bg text-gray-900 dark:text-gray-100 transition-colors duration-300;
+  }
+}
+
+/* Glassmorphism Utilities */
+@layer components {
+  /* The "Glass Card" Effect */
+  .glass {
+    @apply bg-white/70 dark:bg-dark-card/60 backdrop-blur-lg border border-gray-200 dark:border-dark-border shadow-xl;
+  }
+
+  /* The "Glass Input" Effect */
+  .glass-input {
+    @apply bg-gray-50/50 dark:bg-black/40 border border-gray-300 dark:border-dark-border 
+    text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400
+    focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all duration-200;
+  }
+
+  /* The "Primary Button" */
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-hover text-black font-bold py-2 px-4 rounded-lg 
+    shadow-lg shadow-primary-glow transition-all duration-200 active:scale-95;
+  }
+}
+
+/* Custom Scrollbar (optional, looks cool in dark mode) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-700 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-600;
+}
