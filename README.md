@@ -139,9 +139,9 @@ Open your browser and visit http://localhost:5173
 
 ## 👤 Author
 
-### Ashish Kumar Shrivastva
+### Amruta Patil
 - A passionate **Full Stack Developer** focused on building scalable web applications.
-- [GitHub Profile](https://github.com/ashish-shrivastva)
+- [GitHub Profile](https://github.com/AmrutaPatil5)
 
 ## 📝 Notes
 
